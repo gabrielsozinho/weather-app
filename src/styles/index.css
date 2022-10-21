@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    background-image: url(/src/img/background.jpg);
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.333);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.311);
+    margin: 0 auto;
+    width: 90vw;
+    height: 80vh;
+
+}
