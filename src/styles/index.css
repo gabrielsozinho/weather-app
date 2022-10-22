@@ -1,14 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
 body {
     height: 100vh;
     background-image: url(/src/img/background.jpg);
     background-position: top center;
     background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
     display: flex;
+    padding-bottom: 1vh;
+}
+
+header a {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    width: 160px;
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+header a p {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-right: 10px;
 }
 
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.main-container {
     background: rgba(255, 255, 255, 0.333);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -19,4 +50,83 @@ main {
     width: 90vw;
     height: 80vh;
 
+}
+
+.search-container {
+    width: 10vw;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+}
+
+.search-container input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    text-align: center;
+}
+
+.search-container img {
+    width: 16px;
+    height: 16px;
+
+}
+
+.current {
+    width: 100%;
+    font-weight: 700;
+}
+
+.current-temperature {
+    display: flex;
+    margin-top: 30vh;
+    width: 7rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.temperature {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 21px;
+}
+
+.celsius {
+    font-weight: 700;
+    font-size: 2rem;
+    height: 100%;
+}
+
+.location {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2vh;
+}
+
+.current-conditions {
+    display: flex;
+    margin-top: 15vw;
+    margin-bottom: 0;
+    height: 1.2rem;
+    padding-left: 15px;
+}
+
+.weather-condition {
+    font-weight: 700;
+    padding-right: 1vw;
+    font-size: 1.2rem;
+}
+
+.humidity {
+    font-weight: 400;
+    padding-right: 1vw;
+    font-size: 1.2rem;
+}
+
+.feels-like {
+    font-weight: 400;
+    padding-right: 1vw;
+    font-size: 1.2rem;
 }
