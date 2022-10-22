@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/src/styles/index.css">
     <link rel="stylesheet" href="/src/styles/reset.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="/asrc/scripts/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -22,27 +21,27 @@
     </header>
     <main>
         <div class="main-container">
-            <form class="search-container">
-                <input type="text" class="search-input" placeholder="Search Location">
-                <img class="search-button" src="src/img/search.png" alt="search icon">
+            <form class="search-container" id="search-form">
+                <input type="text" class="search-input" placeholder="Search Location" id="search-input">
+                <img class="search-button" src="src/img/search.png" alt="search icon" id="search-button">
             </form>
             
             <div class="infos">
                 <div class="current">
-                    <div class="current-temperature"><p class="temperature">XX</p><p class="celsius">ºC</p></div>
-                    <div class="location"><p>Somewhere on planet Earth (or not...?)</p></div>
+                    <div class="current-temperature"><p class="temperature" id="temperature">XX</p><p class="celsius">ºC</p></div>
+                    <div class="location"><p id="location">Somewhere on planet Earth (or not...?)</p></div>
                 </div>
         
         
                 <div class="current-conditions">
-                    <p class="weather-condition">Money rain</p>
-                    <p class="humidity">Humidity: 101%</p>
-                    <p class="feels-like">Feels like: XXºC</p>
+                    <p class="weather-condition" id="weather-condition">Money rain</p>
+                    <p class="humidity" id="humidity">Humidity: 101%</p>
+                    <p class="feels-like" id="feels-like">Feels like: XXºC</p>
                 </div>
             </div>
         </div>
 
     </main>
-    
+    <script src="/src/scripts/index.js"></script>
 </body>
 </html>

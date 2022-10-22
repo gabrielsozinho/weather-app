@@ -30,6 +30,7 @@ header a p {
     color: black;
     text-align: center;
     margin-right: 10px;
+    font-size: 1rem;
 }
 
 main {
@@ -40,24 +41,22 @@ main {
 }
 
 .main-container {
-    background: rgba(255, 255, 255, 0.333);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.311);
+    background: radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(5px);
+    border-radius: 18px;
     margin: 0 auto;
     width: 90vw;
     height: 80vh;
-
+    border: 1px solid rgba(255, 255, 255, 0.423);
+    position: relative;
+    overflow: hidden;
 }
 
 .search-container {
-    width: 10vw;
+    width: 11rem;
     margin: 0 auto;
     display: flex;
     color: black;
-    border-bottom: 1px solid black;
     padding-top: 5px;
 }
 
@@ -65,12 +64,24 @@ main {
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.search-container input:focus{
+    outline: none;
 }
 
 .search-container img {
     width: 16px;
     height: 16px;
+    border-bottom: 1px solid black;
+    transition: 0.2s;
+}
 
+.search-container img:hover{
+    cursor: pointer;
+    filter: opacity(70%);
+    transition: 0.5s;
 }
 
 .current {
@@ -107,10 +118,13 @@ main {
 
 .current-conditions {
     display: flex;
-    margin-top: 15vw;
     margin-bottom: 0;
     height: 1.2rem;
     padding-left: 15px;
+    padding-bottom: 1vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .weather-condition {
