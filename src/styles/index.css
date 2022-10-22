@@ -144,3 +144,35 @@ main {
     padding-right: 1vw;
     font-size: 1.2rem;
 }
+
+
+@media screen and (max-width: 360px) {
+    .current-conditions {
+        display: flex;
+        margin-bottom: 0;
+        height: 1rem;
+        padding-left: 15px;
+        padding-bottom: 3vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .weather-condition {
+        font-weight: 700;
+        padding-right: 1vw;
+        font-size: 1rem;
+    }
+    
+    .humidity {
+        font-weight: 400;
+        padding-right: 1vw;
+        font-size: 1rem;
+    }
+    
+    .feels-like {
+        font-weight: 400;
+        padding-right: 1vw;
+        font-size: 1rem;
+    }
+}
